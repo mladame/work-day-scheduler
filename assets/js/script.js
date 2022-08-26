@@ -18,32 +18,24 @@
 
 
 
-// get functions to load on page load
+// functions are called on page load
 $(document).ready(function(){
 
     // ----CALENDAR-----
     var todaysDate = moment().format("dddd, MMMM Do YYYY");
     $('#currentDay').html(todaysDate);
+
+//  ----COLOR CODE----
+    function colorCode() {
+        // current hour
+        var currentTime = moment().hour();
+        console.log(currentTime)
+    }
+
+    colorCode()
 })
 
-<<<<<<< HEAD
-=======
 
-//  function to call date upon open
-
-//  add moment.js format: moment().format("dddd, MMMM Do YYYY");
-//      UNIX Timestapm (seconds)    moment(1318874398806).unix(); // 1318874398
-//      moment(Number); var day = moment(1318781876406);    moment.unix(Number)
-//      moment().hour(Number);
-//      moment().hour(); // Number
-
-//      var d = new Date();
-
-//      var day = d.getDate();
-
->>>>>>> 5ab235d7ddf44c1958b3bd2f98248ffceb8b8063
-
-//  -------COLOR CODE--------
 //  color coded time interval for past, present, future
 //  on open a function will show:
 //       current hour as red, past hours as gray, future hours as green
