@@ -11,13 +11,18 @@
 //  Work Day Scheduler Code
 //  -------DEFINE ELEMENTS--------
 //      elements to be defined: 
-//          "#currentDay" ".lead" - container to render the date
+//          "#currentDay" - container to render the date
 //          ".container" - will hold timeblocks
 //          ".time-block" - timeblocks in container under rows
 //          ".saveBtn" - in container under rows
-//          ".hour" - will show current hour
-//          ".past, .present, .future" - color coded
-//          "event-input" - textarea
+//          ".hour" - will show or dictate current hour - currentTime
+//          ".past, .present, .future" - color coded classes
+//          ".descrption" - textarea
+//          ".hrX" = hour of row
+
+
+// get functions to load on page load:
+//      $(document).ready(function()
 
 //  -------CALENDAR--------
 //  function to call date upon open
@@ -35,18 +40,36 @@
 //       current hour as red, past hours as gray, future hours as green
 // event.timeStamp - must be on an event
 //      The difference in milliseconds between the time the browser created the event and January 1, 1970
-// if statement for color code?
-// setInterval()?
+
+
+//  function to define current hour in scheduler
+//      moment.js to define current time? jquery?
+//      if loop??
+//      check timeblocks? check id, how? set class to number? setinterval()?
+//      if (scheduleTime === currentTime) {
+//          give class present
+//      }
+//      if (scheduleTime > currentTime) {
+//          give class future
+//      } else or
+//      if (scheduleTime < currentTime) {
+//          give class past
+//      }
+
+//      scheduleTime = the hour of the row
 
 
 //  --------TIMEBLOCKS-------
 //  timeblock consists of schedule, textarea, button, current hour
 //  aligned to standard business hours 9am - 5pm
-//      use bootstrap grid in html classes - go to hmtl file
-//      bootstrap>listgroup>flush; will define where the hour should be shown
 
 
 //  --------SAVE EVENT---------
 // onclick save button, event-input will be stored in local storage
+// might have to use "this"
 
 // upon save, the event is rendered in its respective timeblock, persists upon refresh
+
+//  get description - connect description to key?  $('#id').text('string'); ??
+// set to local storage - localStorage.setItem(key,value);
+// get from local storage - must remain - localStorage.getItem(key);

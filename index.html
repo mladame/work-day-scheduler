@@ -29,15 +29,26 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- add to container class:my-2 mx-4-->
-      <!-- Timeblocks go here (check again, may need to fix col)-->
-      <!-- <div class="row">-->
-      <!--<div class="businessHours col-1"></div> add:bootstrap flush list code, change times-->
-      <!-- <div class="time-block col-10"></div> -->
-      <!-- 
-        <button class="saveBtn col-1"></button> 
-        <i class="fa-solid fa-floppy-disk"></i> -- save icon, inside <button>
-      -->
+  <!-- add to container class:my-2 mx-4 ????-->
+  <!-- Timeblocks go here (check again, may need to fix col)-->
+  
+  <!-- <div class="row">-->
+
+    <!--individual sections with: label div, textarea, button-->
+    <!--<section id="hrX" class="time-block">; replace x w/hour; change times-->
+
+    <!-- <section id="hrX" class="time-block">
+            <div class="hour col-1"></div>
+            <textarea class="description col-10"></textarea>
+            <button class="saveBtn col-1"><i class="fa-solid fa-floppy-disk"></i></button>
+          </section> -->
+  <!-- </div> closing row -->
+
+      <div class="row">
+        <section id="hr8" class="time-block">
+          <h2></h2>
+        </section>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,7 +59,7 @@
 
 <!-- 
   need to add classes: 
-  description; ??
+  description; event user input
   .hour, - need current hour to show on scheduler to show color codes
   .past, .present, .future - will be linked to color codes and hour
   need: textarea - input info class="event-input"
