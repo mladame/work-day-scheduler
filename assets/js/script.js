@@ -33,8 +33,7 @@ $(document).ready(function(){
         }
         if (scheduleTime > currentTime) {
             $(this).addClass("future");
-        } else or
-        if (scheduleTime < currentTime) {
+        } else {
             $(this).addClass("past");
         }})
 }
