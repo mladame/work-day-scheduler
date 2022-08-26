@@ -63,11 +63,6 @@
 //      scheduleTime = the hour of the row
 
 
-//  --------TIMEBLOCKS-------
-//  timeblock consists of schedule, textarea, button, current hour
-//  aligned to standard business hours 9am - 5pm
-
-
 //  --------SAVE EVENT---------
 // onclick save button, event-input will be stored in local storage
 // might have to use "this"
