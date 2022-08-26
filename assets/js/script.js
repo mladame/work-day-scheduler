@@ -33,6 +33,10 @@
 //      moment().hour(Number);
 //      moment().hour(); // Number
 
+//      var d = new Date();
+
+//      var day = d.getDate();
+
 
 //  -------COLOR CODE--------
 //  color coded time interval for past, present, future
@@ -57,11 +61,6 @@
 //      }
 
 //      scheduleTime = the hour of the row
-
-
-//  --------TIMEBLOCKS-------
-//  timeblock consists of schedule, textarea, button, current hour
-//  aligned to standard business hours 9am - 5pm
 
 
 //  --------SAVE EVENT---------
