@@ -1,17 +1,13 @@
 //     PSEUDOCODE - branch - <setup>
-//  upon open we are presented with:
-//      planner,  timeblocks.textarea for standard business hours - branch <feature/timeblocks>
-//      current date at top of calendar "Day, Month Date, Year" - branch <feature/time>
+
 //  timeblocks should be color coded for past, present, future - branch <feature/color-code>
 //  clicking on timeblock will prompt you to enter an event onto timeblock <feature/save-event>
 //      save button will save event to local storage
 //      events will persist upon refresh
-//  append timeblock + button to hour?
 
 //  Work Day Scheduler Code
 //  -------DEFINE ELEMENTS--------
 //      elements to be defined: 
-//x          "#currentDay" - container to render the date
 //          ".container" - will hold timeblocks
 //          ".time-block" - timeblocks in container under rows
 //          ".saveBtn" - in container under rows
@@ -30,6 +26,8 @@ $(document).ready(function(){
     $('#currentDay').html(todaysDate);
 })
 
+<<<<<<< HEAD
+=======
 
 //  function to call date upon open
 
@@ -43,6 +41,7 @@ $(document).ready(function(){
 
 //      var day = d.getDate();
 
+>>>>>>> 5ab235d7ddf44c1958b3bd2f98248ffceb8b8063
 
 //  -------COLOR CODE--------
 //  color coded time interval for past, present, future
