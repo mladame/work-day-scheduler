@@ -33,6 +33,10 @@
 //      moment().hour(Number);
 //      moment().hour(); // Number
 
+//      var d = new Date();
+
+//      var day = d.getDate();
+
 
 //  -------COLOR CODE--------
 //  color coded time interval for past, present, future
