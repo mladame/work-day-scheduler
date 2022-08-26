@@ -11,7 +11,7 @@
 //  Work Day Scheduler Code
 //  -------DEFINE ELEMENTS--------
 //      elements to be defined: 
-//          "#currentDay" - container to render the date
+//x          "#currentDay" - container to render the date
 //          ".container" - will hold timeblocks
 //          ".time-block" - timeblocks in container under rows
 //          ".saveBtn" - in container under rows
@@ -21,10 +21,16 @@
 //          ".hrX" = hour of row
 
 
-// get functions to load on page load:
-//      $(document).ready(function()
 
-//  -------CALENDAR--------
+// get functions to load on page load
+$(document).ready(function(){
+
+    // ----CALENDAR-----
+    var todaysDate = moment().format("dddd, MMMM Do YYYY");
+    $('#currentDay').html(todaysDate);
+})
+
+
 //  function to call date upon open
 
 //  add moment.js format: moment().format("dddd, MMMM Do YYYY");
