@@ -21,6 +21,7 @@
 //          ".hrX" = hour of row
 
 
+
 // get functions to load on page load
 $(document).ready(function(){
 
@@ -28,6 +29,7 @@ $(document).ready(function(){
     var todaysDate = moment().format("dddd, MMMM Do YYYY");
     $('#currentDay').html(todaysDate);
 })
+
 
 //  function to call date upon open
 
