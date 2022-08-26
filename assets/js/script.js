@@ -15,9 +15,9 @@
 //          ".container" - will hold timeblocks
 //          ".time-block" - timeblocks in container under rows
 //          ".saveBtn" - in container under rows
-//          ".hour" - will show current hour
-//          ".past, .present, .future" - color coded
-//          "event-input" - textarea
+//          ".hour" - will show or dictate current hour
+//          ".past, .present, .future" - color coded classes
+//          ".descrption" - textarea
 
 //  -------CALENDAR--------
 //  function to call date upon open
@@ -35,8 +35,14 @@
 //       current hour as red, past hours as gray, future hours as green
 // event.timeStamp - must be on an event
 //      The difference in milliseconds between the time the browser created the event and January 1, 1970
-// if statement for color code?
+// if statement for color code? possible logic:
+
+// if (hour === eventTime){
+//     eventInput.addClass(present)
+// }
+
 // setInterval()?
+// add ids to textarea for each hour? for all hours?
 
 
 //  --------TIMEBLOCKS-------
@@ -48,5 +54,6 @@
 
 //  --------SAVE EVENT---------
 // onclick save button, event-input will be stored in local storage
+// might have to use "this"
 
 // upon save, the event is rendered in its respective timeblock, persists upon refresh
