@@ -31,10 +31,13 @@
     <div class="container">
       <!-- add to container class:my-2 mx-4-->
       <!-- Timeblocks go here (check again, may need to fix col)-->
-      <!-- <div class="row"-->
-      <!--<div class="businessHours col-1"></div>-->
-      <!-- <div class="timeblocks col-8"></div> -->
-      <!-- <div class="saveBtn col-1"></div> -->
+      <!-- <div class="row">-->
+      <!--<div class="businessHours col-1"></div> add:bootstrap flush list code, change times-->
+      <!-- <div class="time-block col-10"></div> -->
+      <!-- 
+        <button class="saveBtn col-1"></button> 
+        <i class="fa-solid fa-floppy-disk"></i> -- save icon, inside <button>
+      -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,3 +46,10 @@
   </body>
 </html>
 
+<!-- 
+  need to add classes: 
+  description; ??
+  .hour, - need current hour to show on scheduler to show color codes
+  .past, .present, .future - will be linked to color codes and hour
+  need: textarea - input info class="event-input"
+-->
