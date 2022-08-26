@@ -1,16 +1,4 @@
-//     PSEUDOCODE - branch - <setup>
-//  clicking on timeblock will prompt you to enter an event onto timeblock <feature/save-event>
-//      save button will save event to local storage
-//      events will persist upon refresh
-
-//  Work Day Scheduler Code
-//  -------DEFINE ELEMENTS--------
-//      elements to be defined: 
-//          ".saveBtn" - in container under rows
-//          ".descrption" - textarea
-
-
-
+// WORK SCHEDULER CODE
 // functions are called on page load
 $(document).ready(function(){
 
@@ -39,14 +27,24 @@ $(document).ready(function(){
         }})
 }
     colorCode()
+
+    //  ----SAVE EVENT-----
+    $(".saveBtn").on("click", function() {
+        var event = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
+
+        localStorage.setItem(time, event);
+    })
+
+    //local storage render for each
+    $("#hr9 .description").val(localStorage.getItem("hr9"));
+    $("#hr10 .description").val(localStorage.getItem("hr10"));
+    $("#hr11 .description").val(localStorage.getItem("hr11"));
+    $("#hr12 .description").val(localStorage.getItem("hr12"));
+    $("#hr13 .description").val(localStorage.getItem("hr13"));
+    $("#hr14 .description").val(localStorage.getItem("hr14"));
+    $("#hr15 .description").val(localStorage.getItem("hr15"));
+    $("#hr16 .description").val(localStorage.getItem("hr16"));
+    $("#hr17 .description").val(localStorage.getItem("hr17"));
+
 })
-
-//  --------SAVE EVENT---------
-// onclick save button, event-input will be stored in local storage
-// might have to use "this"
-
-// upon save, the event is rendered in its respective timeblock, persists upon refresh
-
-//  get description - connect description to key?  $('#id').text('string'); ??
-// set to local storage - localStorage.setItem(key,value);
-// get from local storage - must remain - localStorage.getItem(key);
