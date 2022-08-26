@@ -37,8 +37,18 @@ $(document).ready(function(){
         $(".time-block").each(function () {
             var scheduleTime = parseInt($(this).attr("id").split("hr")[1]);
         // console.log(scheduleTime);
+        
+    
+        if (scheduleTime === currentTime) {
+            $(this).addClass("present");
         }
-    )}
+        if (scheduleTime > currentTime) {
+            $(this).addClass("future");
+        } else or
+        if (scheduleTime < currentTime) {
+            $(this).addClass("past");
+        }})
+}
 
 
     colorCode()
