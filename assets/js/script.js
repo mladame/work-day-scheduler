@@ -1,17 +1,14 @@
 //     PSEUDOCODE - branch - <setup>
-//  upon open we are presented with:
-//      planner,  timeblocks.textarea for standard business hours - branch <feature/timeblocks>
-//      current date at top of calendar "Day, Month Date, Year" - branch <feature/time>
+
 //  timeblocks should be color coded for past, present, future - branch <feature/color-code>
 //  clicking on timeblock will prompt you to enter an event onto timeblock <feature/save-event>
 //      save button will save event to local storage
 //      events will persist upon refresh
-//  append timeblock + button to hour?
 
 //  Work Day Scheduler Code
 //  -------DEFINE ELEMENTS--------
 //      elements to be defined: 
-//          "#currentDay" - container to render the date
+var timeBlock = $(".time-block");
 //          ".container" - will hold timeblocks
 //          ".time-block" - timeblocks in container under rows
 //          ".saveBtn" - in container under rows
@@ -21,24 +18,33 @@
 //          ".hrX" = hour of row
 
 
-// get functions to load on page load:
-//      $(document).ready(function()
 
-//  -------CALENDAR--------
-//  function to call date upon open
+// functions are called on page load
+$(document).ready(function(){
 
-//  add moment.js format: moment().format("dddd, MMMM Do YYYY");
-//      UNIX Timestapm (seconds)    moment(1318874398806).unix(); // 1318874398
-//      moment(Number); var day = moment(1318781876406);    moment.unix(Number)
-//      moment().hour(Number);
-//      moment().hour(); // Number
+    // ----CALENDAR-----
+    var todaysDate = moment().format("dddd, MMMM Do YYYY");
+    $('#currentDay').html(todaysDate);
 
-//      var d = new Date();
+//  ----COLOR CODE----
+    function colorCode() {
+        // current hour
+        var currentTime = moment().hour();
+        // console.log(currentTime);
 
-//      var day = d.getDate();
+        //call class, get hours loop
+        // var scheduleTime = parseInt($(this).attr("id").split("hr","Number"));
+        $(".time-block").each(function () {
+            var scheduleTime = parseInt($(this).attr("id").split("hr")[1]);
+        // console.log(scheduleTime);
+        }
+    )}
 
 
-//  -------COLOR CODE--------
+    colorCode()
+})
+
+
 //  color coded time interval for past, present, future
 //  on open a function will show:
 //       current hour as red, past hours as gray, future hours as green
