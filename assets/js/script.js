@@ -8,6 +8,7 @@
 //  Work Day Scheduler Code
 //  -------DEFINE ELEMENTS--------
 //      elements to be defined: 
+var timeBlock = $(".time-block");
 //          ".container" - will hold timeblocks
 //          ".time-block" - timeblocks in container under rows
 //          ".saveBtn" - in container under rows
@@ -29,8 +30,16 @@ $(document).ready(function(){
     function colorCode() {
         // current hour
         var currentTime = moment().hour();
-        console.log(currentTime)
-    }
+        // console.log(currentTime);
+
+        //call class, get hours loop
+        // var scheduleTime = parseInt($(this).attr("id").split("hr","Number"));
+        $(".time-block").each(function () {
+            var scheduleTime = parseInt($(this).attr("id").split("hr")[1]);
+        // console.log(scheduleTime);
+        }
+    )}
+
 
     colorCode()
 })
